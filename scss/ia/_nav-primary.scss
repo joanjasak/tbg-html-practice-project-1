@@ -1,0 +1,267 @@
+/*base styles here*/
+
+@media screen and (max-width: 600px) {
+	
+/*	.nav-primary-label {
+		padding-left: 50px;
+		font-size: 18px;
+		font-weight: bold;
+		display: flex;
+		align-items: center;
+		min-height: 50px;
+	}
+
+	.nav-primary-toggle {
+		position: absolute;
+		height: 30px;
+		width: 30px;
+		border: 1px solid black;
+		top: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		left: 10px;
+		font-weight: bold;
+	}
+	
+	.nav-primary-level-1 { 
+		position: relative;
+
+		a {
+			color: white;
+		}
+
+		&.nav-primary-level-1-section-1 {
+			background: red;
+		}
+
+		&.nav-primary-level-1-section-2 {
+			background: orange;
+		}
+
+		&.nav-primary-level-1-section-3 {
+			background: blue;
+		}
+
+		&.nav-primary-level-1-section-4 {
+			background: purple;
+		}
+
+		&.nav-primary-level-1-section-5 {
+			background: #008080;
+		}
+	}
+
+	.nav-primary-level-2 {
+		background-color: white;
+		padding: 10px 0 10px 30px;
+	}*/
+
+	.nav-primary-content-level-2 {
+		display: block;
+		padding: 15px;
+		font-weight: bold;
+		font-size: 18px;
+
+			a {
+				color: black;
+			}
+	}
+
+	.nav-primary-header-col-2 {
+		display: block;
+		padding: 15px 0 5px 10px;
+		font-weight: bold;
+		font-size: 20px;
+		color: red;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	
+	.nav-primary-label {
+		padding-left: 50px;
+		font-size: 18px;
+		font-weight: bold;
+		display: flex;
+		align-items: center;
+		min-height: 50px;
+	}
+
+	.nav-primary-toggle {
+		position: absolute;
+		height: 30px;
+		width: 30px;
+		border: 1px solid black;
+		top: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		left: 10px;
+		font-weight: bold;
+	}
+	
+	.nav-primary-level-1 { 
+		position: relative;
+
+		a {
+			color: white;
+		}
+
+		&.nav-primary-level-1-section-1 {
+			background: red;
+		}
+
+		&.nav-primary-level-1-section-2 {
+			background: orange;
+		}
+
+		&.nav-primary-level-1-section-3 {
+			background: blue;
+		}
+
+		&.nav-primary-level-1-section-4 {
+			background: purple;
+		}
+
+		&.nav-primary-level-1-section-5 {
+			background: #008080;
+		}
+	}
+
+	.nav-primary-level-2 {
+		background-color: white;
+		padding: 10px 0 10px 30px;
+	}
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+	
+	.nav-primary-toggle {
+		display: none;
+	}
+	/*This is working now*/
+}
+
+@media screen and (min-width: 901px) {
+	
+	.nav-primary-toggle {
+		display: none;
+	}
+
+	.nav-primary-level-2 {
+		display: none;
+	}
+
+	.nav-primary-label {
+		width: 100%;
+		text-align: center;
+	}
+	
+	.nav-primary-level-1 {
+		position: absolute;
+		width: 20%;
+		height: 60px;
+		padding: 0 20px;
+		bottom: 0px;
+		display: flex;
+		align-items: center;
+
+		a {
+			color: white;
+			font-weight: bold;
+			font-size: 20px;
+		}
+
+		&:hover > .nav-primary-level-2 {
+			display: block;
+		}
+
+		&.nav-primary-level-1-section-1 {
+			left: 0;
+			background: red;
+		}
+
+		&.nav-primary-level-1-section-2 {
+			left: 20%;
+			background: orange;
+		}
+		
+		&.nav-primary-level-1-section-3 {
+			left: 40%;
+			background: blue;
+		}
+
+		&.nav-primary-level-1-section-4 {
+			right: 20%;
+			background: purple;
+		}
+
+		&.nav-primary-level-1-section-5 {
+			right: 0;
+			background: #008080;
+		}
+	
+	}
+
+	.nav-primary-level-2 {
+		position: absolute;
+		bottom: 60px;
+		width: 550px;
+		padding: 20px;
+
+		&.nav-primary-flyout-1 {
+			left: 0;
+			background: red;
+		}
+
+		&.nav-primary-flyout-2 {
+			left: 0;
+			background: orange;
+		}
+
+		&.nav-primary-flyout-3 {
+			left: 0;
+			background: blue;
+		}
+
+		&.nav-primary-flyout-4 {
+			right: 0;
+			background: purple;
+		}
+
+		&.nav-primary-flyout-5 {
+			right: 0;
+			background: #008080;
+		}
+
+	}
+
+	.nav-primary-level-2-col {
+
+		&.nav-primary-level-2-col-1 {
+			width: 50%;
+			float: left;
+			border-right: 1px solid white;
+		}
+
+		&.nav-primary-level-2-col-2 {
+			width: 50%;
+			float: left;
+			padding: 0 0 0 10px;
+		}
+	}
+
+	.nav-primary-content-level-2 {
+		padding: 15px;
+	}
+
+	.nav-primary-header-col-2 {
+		display: block;
+		padding: 15px;
+		font-weight: bold;
+		color: white;
+		font-size: 20px;
+	}
+
+}

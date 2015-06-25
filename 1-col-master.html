@@ -1,0 +1,82 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="{{ page.description }}">
+    <meta name="keywords" content="{{ page.keywords }}">
+    <meta name="viewport" content="width=device-width">
+
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ page.description }}">
+    <meta property="og:url" content="{{ page.url }}">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="css/ia/main.css">
+
+</head>
+<body>
+
+    <header class="l-header">
+        <div class="header-inner l-contain">
+            <div class="header-logo">Logo</div>
+            <div class="header-utility">
+                <ul class="nav-utility">
+                    <li><a href="#">Link-1</a></li>
+                    <li><a href="#">Link-2</a></li>
+                    <li><a href="#">Link-3</a></li>
+                    <li><a href="#">Link-4</a></li>
+                    <li><a href="#" class="active">Link-5-Active</a></li>
+                </ul> <!-- .nav-utility -->
+                <div class="header-search">
+                    <label for="search-input">Search</label>
+                    <input type="search" placeholder="Search" id="search-input" class="header-search-input">
+                </div> <!-- .header-search -->
+                <div class="header-login">
+                    <a class="js-header-login-toggle header-login-toggle" href="#">Login</a> <!-- I want to make the whole login button clickable as with a in nav-primary. -->
+                    <div class="header-login-content is-collapsed"> 
+                        <label for="username-input">Username</label>
+                        <input type="username" placeholder="Username" id="username-input" class="header-username-input">
+                        <label for="password-input">Password</label>
+                        <input type="password" placeholder="Password" id="password-input" class="header-password-input">
+                        <button type="submit" class="header-login-button">Submit</button>
+                        <!-- Add submit button! -->
+                    </div> <!-- .header-login-content -->
+                </div> <!-- .header-login -->
+            </div> <!-- .header-utlity -->
+        </div> <!-- .header-inner -->
+    </header>
+	
+	<div class="nav-wrap js-nav-wrap">
+        <div class="l-contain">
+            <nav class="nav-primary"></nav>
+        </div>
+    </div>
+
+    <div class="l-maincontent l-contain cf">
+        <div class="l-1-col-master cf">
+
+            <main class="l-content-primary">
+                <p>Main content here</p>
+            </main><!-- .content-primary -->
+
+        </div><!-- .l-1-col-master -->
+    </div><!-- .l-maincontent .l-contain -->
+
+    <footer class="l-footer cf">
+        <div class="footer-inner l-contain">
+            <div class="footer-logo">Footer</div>
+        </div> <!-- .footer-inner -->
+    </footer> 
+	
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/ia/main.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+@mixin width($context, $target) { 
+	width: percentage($target / $context);
+}
+.content-nav {
+	background: #ccc;
+	@include width(1200,300); 
+}
+.content-nav a {
+	display: block;
+}
+.l-content-primary{
+	padding: 0px 10px;
+}
+.l-content-secondary {
+	padding: 0px 10px;
+}
+.l-wrapper {
+	max-width: 1200px;
+}
+.nav-breadcrumb-level {
+	padding: 10px 20px;
+}
+.nav-breadcrumb-level-1 {
+	background: #999;
+}
+.nav-breadcrumb-level-2 {
+	padding-left: 30px;
+	background: #ccc;
+}
+.nav-breadcrumb-level-3 {
+	padding-left: 50px;
+	background: #e6e6e6;
+}
+.nav-breadcrumb-child > ul > li {
+	padding: 5px;
+}
+.nav-breadcrumb-parent {
+	min-height: 30px;
+	padding-top: 6px;
+	position: relative;
+}
+.nav-breadcrumb-parent-link {
+	font-size: 20px;
+	font-weight: bold;
+}
+.nav-breadcrumb-toggle {
+	position: absolute;
+	right: 10px;
+	top: 0px;
+	height: 30px;
+	width: 30px;
+	border: 1px solid red;
+	text-align: center;
+	line-height: 30px;
+}
+

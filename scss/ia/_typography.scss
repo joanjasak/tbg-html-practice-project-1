@@ -1,0 +1,92 @@
+/* ======  Typography / RTF Styles ====== */
+
+/* To prevent overwriting issues, we have very few tag-only styles.
+Instead, we define a class that can be extended */
+
+body {
+    font-size: 16px;
+}
+
+
+/* Anchor Styles */
+
+a {
+    cursor: pointer;
+}
+.a,
+.rtf, a {
+    
+}
+
+
+/* RTF Image Styles */
+
+/*.rtf figure,
+.figure {
+    figcaption {}
+    &.l-float-l {}
+    &.l-float-r {}
+}*/
+
+
+/* Header Styles */
+
+.h1, h1 {
+	font-family: sans-serif;
+	font-size: 36px;
+	padding: 5px 0px;
+}
+.h2, h2 {
+	font-family: sans-serif;
+	font-size: 28px;
+}
+.h3, h3 {
+	font-family: sans-serif;
+	font-size: 24px;
+}
+.h4, h4 {
+	font-family: sans-serif;
+	font-size: 18px;
+}
+.h5, h5 {
+	font-family: sans-serif;
+	font-size: 16px;
+}
+.h6, h6 {
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+
+/* Body Copy Style */
+
+.p, p {
+	font-family: serif;
+	font-size: 14px;
+}
+.ul, ul {
+	font-family: serif;
+	font-size: 14px;
+}
+.ol, ol {
+    margin-bottom: 0.5em;
+}
+
+/* Better unordered list styles that don't partially hide behind floated images
+ Customize the bullet size, color, position, etc. based on design
+ https://github.com/BerndtGroup/TBG-Front-End-Boilerplate/issues/23 */
+.ol, .rtf ol {}
+
+
+/* Link with a right-pointing single arrow quote */
+
+.link-arrow:after {
+    content: '\00a0\203A';
+}
+
+
+/* Link with a right-pointing double arrow quote */
+
+.link-arrows:after {
+    content: '\00a0\00bb';
+}

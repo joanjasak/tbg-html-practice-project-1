@@ -1,0 +1,13 @@
+.footer-inner {
+	padding: 10px;
+}
+
+.footer-logo {
+	position: absolute; 
+	height: 60px;
+	width: 100px;
+	text-align: center;
+	line-height: 60px;
+	background: #9999e6;
+	z-index: $zindexFooter;
+}

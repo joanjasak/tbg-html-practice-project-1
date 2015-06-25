@@ -1,0 +1,19 @@
+.header-search { 
+	position: absolute;
+	top: 0;
+	right: 100px;
+/*	display: inline-block;*/
+	padding: 10px;
+	background: #9999e6;
+
+	label {
+		display: none; 
+	}
+}
+.header-search-input {
+	width: 200px;
+	padding: 5px; /*Adjust the location of the input text and size of input box*/
+	&[placeholder] {
+		color: green;
+	}
+}

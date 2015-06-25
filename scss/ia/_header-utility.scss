@@ -1,0 +1,12 @@
+.header-utility {
+	position: relative;
+}
+.header-logo { 
+	position: absolute;
+/*	display: inline-block;*/ /*Note that the text will display to the left or right with this, so use text-align and line-height and remove display: block*/
+	height: 60px;
+	width: 60px;
+	text-align: center;
+	line-height: 60px;
+	background: #9999e6;
+}

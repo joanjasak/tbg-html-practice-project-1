@@ -1,0 +1,24 @@
+.nav-utility {
+	position: absolute;
+	top: 0;
+	right: 360px;
+}
+
+.nav-utility li { 
+	display: inline-block;
+	padding: 20px;
+	color: blue;
+
+	a {
+		color: green;
+			&.active {
+				color: red;
+			} 
+	}
+}
+@media (max-width: 900px) {
+	/*first step is to create a rule here for something that we want to hide*/
+	.nav-utility {
+		display: none;
+	}
+}

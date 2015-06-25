@@ -1,0 +1,68 @@
+.l-header {
+	height: 100px;
+	background: pink;
+}
+.l-contain {
+	width: 94%;
+	max-width: 1300px;
+	margin: 0 auto;
+}
+.l-content-primary {
+
+	h1 {
+		padding: 10px 0 10px 0;
+	}
+
+	p {
+		padding-bottom: 20px;
+	}
+}
+/*//start here 2-19 add max-width*/
+.l-1-col-master .l-content-primary {
+	width: 100%
+}
+/*//this means that "this content-primary class inside the 1 column master is X%*/
+
+.l-2-col-master {
+	.l-content-primary {
+		width: 70%;
+		float: left;
+	}
+	.content-nav {
+		width: 30%;
+		float: left;
+	}
+}
+.l-3-col-master {
+	.l-content-primary {
+		width: 45%;
+		float: left;
+	}
+	.content-nav {
+		width: 30%;
+		float: left;
+	}
+	.l-content-secondary {
+		width: 25%;
+		float: left;
+		padding-top: 10px;
+	}
+}
+.l-footer {
+	height: 100px;
+	width: 100%;
+	float: left;
+	background: red;
+}
+@media (max-width: 900px) {
+	/*first step is to create a rule here for something that we want to hide*/
+	.content-nav {
+		display: none;
+	}
+	.l-2-col-master .l-content-primary {
+		width: auto;
+	}
+	.nav-utility {
+		display: none;
+	}
+}

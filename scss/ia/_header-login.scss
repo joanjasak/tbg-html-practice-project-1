@@ -1,0 +1,51 @@
+.header-login { 
+	position: absolute;
+	top: 0;
+	right: 0; /*Even when I play around with this value it doesn't move. Also, don't I want this element to be relative to header-search?*/
+/*	display: inline-block;*/
+	background: #e6e6e6;
+	z-index: $zindexHeaderLogin;
+}
+.header-login-toggle {
+	display: block;
+	padding: 15px;
+	width: 80px;
+	height: 50px;
+	text-align: center;
+}
+.header-login-content { 
+	position: absolute;
+	top: 50px;
+	right: 0px;
+/*	display: inline-block;*/
+	padding: 20px;
+	background: #088da5;
+}
+.header-login-content label {
+		display: block; 
+	}
+.header-login-content label {
+  display: block;
+  margin: 5px 0 5px 0;
+}
+.header-login-content input+label {
+  margin-top: 20px;
+}
+.header-username-input {
+	width: 200px;
+	padding: 5px; /*Adjust the location of the input text and size of input box*/
+	&[placeholder] {
+		color: green;
+	}
+}
+.header-password-input {
+	width: 200px;
+	padding: 5px; /*Adjust the location of the input text and size of input box*/
+	&[placeholder] {
+		color: green;
+	}
+}
+.header-login-button {
+  padding: 5px;
+  margin-top: 20px;
+}
